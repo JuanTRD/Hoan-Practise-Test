@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BT1</title>
+</head>
+<body>
+    <script>
+        let a = +prompt("Enter number of Array: ");
+        let x = [];
+        let average = 0;
+        for (let i = 0; i < a; i++) {
+            x[i] = +prompt('Enter point ' + i);
+            if (x[i] > 10 || x[i] < 0) {
+                alert("Wrong");
+            }
+        }
+        function findAvg(x) {
+            for (let i = 0; i < a; i++) {
+                average += x[i];
+            }
+            alert("Average is " + (average/x.length));
+        }
+        findAvg(x);
+    </script>
+</body>
+</html>

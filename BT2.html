@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BT2</title>
+</head>
+<body>
+<script>
+    let n = +prompt("Enter number of Array: ");
+    let a = [];
+
+    for (let i = 0; i < n; i++) {
+        a[i] = +prompt('Enter number ' + i);
+    }
+    let x = +prompt("Enter NUMBER want to insert to array: ");
+    let index = +prompt('Enter POSITION want to insert to array:')
+    insertNumberToArray(a,x,index)
+    function insertNumberToArray(arr,x,index) {
+        if (index < 0 || index > a.length) {
+            console.log(a);
+        } else {
+            for (let i = a.length; i > index; i--) {
+                a[i]=a[i-1]
+            }
+            a[index]=x;
+        }
+        console.log(a);
+    }
+</script>
+</body>
+</html>
