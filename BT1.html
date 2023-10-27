@@ -8,7 +8,7 @@
     <script>
         let a = +prompt("Enter number of Array: ");
         let x = [];
-        let average = 0;
+        
         for (let i = 0; i < a; i++) {
             x[i] = +prompt('Enter point ' + i);
             if (x[i] > 10 || x[i] < 0) {
@@ -16,6 +16,7 @@
             }
         }
         function findAvg(x) {
+            let average = 0;
             for (let i = 0; i < a; i++) {
                 average += x[i];
             }
